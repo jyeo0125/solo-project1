@@ -1,3 +1,113 @@
-h1{
-    color: red;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    
+}
+#img-container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+#faceUp{
+    background-color: cornflowerblue;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background: url(/img/output-onlinejpgtools.jpg)
+}
+.startButton{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+    background-color: transparent !important;
+    }
+
+#cell0 {
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+#cell1 {
+    background-position-x: -100px;
+    background-position-y: 0px;
+}
+#cell2 {
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+#cell3 {
+    background-position-x: -300px;
+    background-position-y: 0px;
+}
+#cell4 {
+    background-position-x: 0px;
+    background-position-y: -100px;
+}
+#cell5 {
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+#cell6 {
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+#cell7 {
+    background-position-x: -300px;
+    background-position-y: -100px;
+}
+#cell8 {
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+#cell9 {
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+#cell10 {
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+#cell11 {
+    background-position-x: -300px;
+    background-position-y: -200px;
+}
+#cell12 {
+    background-position-x: 0px;
+    background-position-y: -300px;
+}
+#cell13 {
+    background-position-x: -100px;
+    background-position-y: -300px;
+}
+#cell14 {
+    background-position-x: -200px;
+    background-position-y: -300px;
+}
+#cell15 {
+    background-position-x: -300px;
+    background-position-y: -300px;
 }
