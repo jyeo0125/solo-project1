@@ -8,14 +8,18 @@
     <title>My-game</title>
 </head>
 <body>
-    <h1>Slide me</h1>
+    <h1>Save chopper</h1>
+<div id= 'statusContainer'>
+    <span id = 'status'>Player1</span> 
+    <span id ='winner' class="hidden"> is winner</span>
+</div>    
     <div class = 'main-container'>
         <ul class = 'img-container'>
         </ul>
        <div class = 'first-face' id ='faceUp'>
-        <button class = 'start-button'>start</button>
-       </div> 
-        <!-- <p class = 'game-text'>END</p> -->
+            <button class = 'start-button'>start</button>
+            <p id ='endGame' class='hidden'> Thank you for Playing </p>
+       </div>  
     </div>
     <script src="/main.js"></script>
 </body>
