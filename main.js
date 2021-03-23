@@ -8,14 +8,6 @@ let startSound = new Audio('Sound/clickandpopmp3.mp3')
 let dragSound = new Audio('Sound/dragSound.mp3')
 // console.log(statusDiv)
 //player change function///////////////////////
-function changeText() {
-  let x = document.querySelector('#status');
-  if (x.innerHTML === "Player1") {
-    x.innerHTML = "Player2";
-  }else{
-    x.innerHTML ="Player1"
-  }
-}
 
 document.querySelector('.start-button').addEventListener('click',()=> {
   // console.log('work')
@@ -25,8 +17,6 @@ document.querySelector('.start-button').addEventListener('click',()=> {
 })
 /* drag event  reference by https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event and Youtube and https://stackoverflow.com/questions/5041494/selecting-and-manipulating-css-pseudo-elements-such-as-before-and-after-usin
 https://www.kirupa.com/html5/drag.htm */
-
-
 
 container.addEventListener('dragstart', (e) => {
   // console.log(e)
@@ -63,6 +53,14 @@ container.addEventListener('drop', (e) => {
   finishChecker();
 })
 
+function changeText() {
+  let x = document.querySelector('#status');
+  if (x.innerHTML === "Player1") {
+    x.innerHTML = "Player2";
+  }else{
+    x.innerHTML ="Player1"
+  }
+}
 function finishChecker() {
   const currentList =[... container.children];
   const unMatched = currentList.filter((li, index)=>{
