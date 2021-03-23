@@ -3,6 +3,9 @@ const startButton = document.querySelector('.start-button')
 const gameText = document.querySelector('#finish')
 const statusDiv = document.querySelector('.status')
 
+/////sound
+let startSound = new Audio('Sound/clickandpopmp3.mp3')
+let dragSound = new Audio('Sound/dragSound.mp3')
 // console.log(statusDiv)
 //player change function///////////////////////
 function changeText() {
@@ -18,6 +21,7 @@ document.querySelector('.start-button').addEventListener('click',()=> {
   // console.log('work')
   document.querySelector('#faceUp').classList.add('hidden')
   document.querySelector('.start-button').classList.add('hidden')
+  startSound.play()
 })
 /* drag event  reference by https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event and Youtube and https://stackoverflow.com/questions/5041494/selecting-and-manipulating-css-pseudo-elements-such-as-before-and-after-usin
 https://www.kirupa.com/html5/drag.htm */
@@ -29,6 +33,7 @@ container.addEventListener('dragstart', (e) => {
   draged.el = e.target;
   draged.class = e.target.className;
   draged.index = [...e.target.parentNode.children].indexOf(e.target)
+  dragSound.play()
 })
 
 container.addEventListener('dragover', (e) => {
