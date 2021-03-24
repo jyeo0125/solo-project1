@@ -53,6 +53,7 @@ container.addEventListener('drop', (e) => {
   finishChecker();
 })
 
+
 function changeText() {
   let x = document.querySelector('#status');
   if (x.innerHTML === "Player1") {
@@ -83,9 +84,13 @@ const draged ={
 }
 
 
+
+
 ///// creat new array for containing creatImgCells function and use mixing(shuffle) function to mix the order of the li. This idea form the youtude.
 let cells=[];
 setGame();
+
+
 
 
 
@@ -98,6 +103,7 @@ function setGame(){
       miximg(cells).forEach(cell => container.appendChild(cell))
     },3000)
 }
+
 
 
 function creatImgCells(){
@@ -114,6 +120,7 @@ function creatImgCells(){
      })
   return newArry
 }
+
 
 ////// This format from the Youtube "how to randomize the order of puzzle"
 function miximg(array){
