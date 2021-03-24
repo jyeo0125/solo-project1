@@ -26,7 +26,7 @@ li {
     width: 110px;
     height: 110px;
     /* border: 1px dotted; */
-    background: url('../img/output-onlinejpgtools.jpg');
+    background: url('https://i.imgur.com/6qR4psC.jpg');
     cursor: pointer;
 }
 .list0{
@@ -116,7 +116,7 @@ li {
 .first-face{
     width: 500px;
     height: 500px;
-    background:url('../img/IMG_2603.JPG');
+    background:url('https://i.imgur.com/7tbKTZU.jpg');
     background-size: 105%;
     position: absolute;
     margin-top: 34px;
